@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class='popup' id="modal">
+        <h3>Edit Task</h3>
+        <input type="text">
+        <div class="btns">
+            <button id="saveBtn">Save</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+            
+    </div>
+    <div class="container">
+        <h2>Todo's</h2>
+        <form action="">
+            <input id="add-task" type="text" placeholder="Add Task">
+            <button type="button" id="removeAll">Delete All</button>
+        </form>
+        <ul id="todo-list">
+            <li>No task</li>
+        </ul>
+        
+    </div>
+    
+</body>
+<script src="./logic.js"></script>
+</html>

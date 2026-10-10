@@ -1,0 +1,52 @@
+li {
+    list-style-type: none;
+}
+
+.finished {
+    text-decoration: line-through;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup input{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.popup {
+    background-color: aqua;
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(165%, -50%) scale(0.2);
+    visibility: hidden; 
+    /* display: none; */
+    transition: transform 0.4s
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(165% , 100%) scale(1);
+}
+
+#add-task {
+    margin-right: 2.5px;
+}
+
+#removeAll {
+    margin-left: 2.5px;
+}
+
+* {
+    color: #eefafb;
+    background-color: rgb(9, 164, 248);
+}
